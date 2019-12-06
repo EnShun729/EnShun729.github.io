@@ -3,17 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="one.css">
   </head>
   <body>
-    <img src="123.jpg" onmousemove="where(event)"><br><br>
-    <div id="div"></div>
-    <script type="text/javascript">
-    var div=document.getElementById("div");
-    function where(e){
-    var text ="버튼=" + e.button + "<br>";
-    text +="(x, y)=" + e.x + "," + e.y + "\n";
-    div.innerHTML = text;
-  }
-    </script>
+    <header>
+      <h1><img src="h1.jpg" width="50px" height="50px"></h1>
+    </header>
+    <nav>
+    <ul>
+      <li><a href ="index.html">HOME</a></li>
+      <li><a href ="#">우리형</a></li>
+      <li><a href ="#">물만두</a></li>
+    </ul>
+    </nav>
+    <aside id="left">
+    <h4>카테고리</h4>
+    <ul>
+    <li><a href ="animate 이동.html" target="if1">animate 이동</a></li>
+    <li><a href ="animate 확대.html" target="if1">animate 확대</a></li>
+    <li><a href ="slideup,down.html" target="if1">slideup</a></li>
+    <li><a href ="#" target="if1">d</a></li>
+    <li><a href ="#" target="if1">e</a></li>
+    </ul>
+  </aside>
+    <section id="main">
+      <article id="article1">
+        <iframe name="if1" src="indexheader.html" width="550" height="400"></iframe>
+      </article>
+    </section>
+    <footer>Copyright agree admit yes~ <br>i'm agree death Do you know Ronaldo
+     he's very famous korea star 주소:스페인 관리자:입니다</footer>
   </body>
 </html>
