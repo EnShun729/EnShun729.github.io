@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+    .slide {
+      width: 210px;
+      border:2px solid #333;
+      box-shadow: 2px 2px 3px #000;
+      float: left;
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    .mul{
+      width: 410px;
+      border:2px solid #333;
+      box-shadow: 2px 2px 3px #000;
+      float: left;
+      margin-top: 30px;
+      margin-left: 20px;
+      font-size: 14.5px;
+    }
+  </style>
+  <script src="http://code.jquery.com/jquery-3.4.1.js">
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#sup").click (function(){
+        $(".slide").slideUp(3000);
+      });
+      $("#sdown").click(function(){
+        $(".slide").slideDown(3000);
+      });
+      $("#stoggle").click(function(){
+        $(".slide").slideToggle(3000);
+      });
+    });
+  </script>
+  <body>
+    <form>
+      <input type="button" id="sup" value="slideup">
+      <input type="button" id="sdown" value="slidedown">
+      <input type="button" id="stoggle" value="slideToggle">
+    </form>
+    <div class="slide">
+      <img src="mul.jpg" width=200 height=140>
+    </div>
+    <div class="slide">
+      <img src="mul2.jpg" width=200 height=140>
+    </div>
+    <div class="mul">
+      <p width=300 height=140>
+        물만두의 개요 <br>
+        말 그대로 물에 넣고 끓인 만두. 본래는 만주족들의 주식이었다. 밥과 함께 물만두를 주식으로 삼았다고 한다. <br>한국과 일본에서는 대개 군만두로 먹는 교자(餃子)를 원래 만주에서는 물만두로 먹는 것이 기본이고, <br>
+        먹고 남은 물만두를 나중에 처리하는 방법이 군만두라고 한다.<br>
+        의외로 해먹는 법도 간단한데, 마트에서 하나 사다가 참기름 약간 넣고 물이 끓을 때 뚜껑을 덮지 말고 만두를 넣으면 가라앉는데, 끓이다보면 만두가 떠오른다. <br>전부 떠올랐을 때 건져서 찬물로 헹구고 간장찍어 먹으면 끝.
+      </p>
+    </div>
+  </body>
+</html>
