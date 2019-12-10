@@ -28,12 +28,18 @@
         $("#btn2").click(function(){
           $("img").animate({ height: "toggle"}, "slow");
         });
+
+        $("#snow").click(function(){
+          $(this).fadeOut(1000);
+          $(this).fadeIn(1000);
+        });
+
       });
     </script>
   </head>
   <body>
     <img src="m.jpg" id="snow" width="400" height="265"><br>
-    <b>아~메시띠~</b>오~메시군요<br>
+    <b>아~메시띠~</b>메시군요<br>
     <button type="button" name="button" id="btn1">좌우 이동</button>
     <button type="button" name="button" id="btn2">이미지 토글</button>
     <div>

@@ -27,10 +27,11 @@
         $("img").animate({ height: "398px"},1000);
         $("img").animate({ borderRadius: "50px"},1000);
       });
+      $("#text").click(function() {
+        $("div").slideToggle(1000);
+        });
     });
-      $("#btn1").click(function() {
-        $("#").slideToggle(1000);
-      });
+
     </script>
   </head>
   <body>
@@ -38,6 +39,7 @@
     <img src="ho.jpg" width="300" height="200">
     <br><b> 호날두 감상</b></br>
     <input id="btn" value="확대하기">
+    <input id="text" value="호날두 설명 보기/숨기기">
     <div>
       호날두는 예전에 포르투갈에서 태어난 포르투갈 사람이다<br>
       그는 스포르팅에서 데뷔했다 데뷔해서 그는 2000년도에<br>

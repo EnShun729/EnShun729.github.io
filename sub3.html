@@ -36,6 +36,10 @@
       $("#stoggle").click(function(){
         $(".slide").slideToggle(3000);
       });
+      $("#man").click(function(){
+        $("#wat").fadeOut(1000);
+        $("#wat").fadeIn(1000);
+      });
     });
   </script>
   <body>
@@ -45,10 +49,10 @@
       <input type="button" id="stoggle" value="slideToggle">
     </form>
     <div class="slide">
-      <img src="mul.jpg" width=200 height=140>
+      <img src="mul.jpg" id="man" width=200 height=140>
     </div>
     <div class="slide">
-      <img src="mul2.jpg" width=200 height=140>
+      <img src="wat.jpg" id="wat" width=200 height=140>
     </div>
     <div class="mul">
       <p width=300 height=140>
